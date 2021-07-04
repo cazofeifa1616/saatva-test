@@ -1,5 +1,12 @@
 import './index.css';
 
+/**
+ * 
+ * @param mattresses - A JSON object which contains the data of the mattresses
+ * @param selectedMattress - The current selected mattress
+ * @param setSelectedMattress - This handler is used to update the current selected mattress
+ * @param selectedMattressInfo - The info of the selected mattress
+ */
 function Toggle({
   mattresses,
   selectedMattress,
@@ -10,6 +17,7 @@ function Toggle({
     <div className="toggle">
       <h3 className="toggle-title">Select Mattress Type</h3>
       <div className="toggle-options">
+        {/** We iterate through the JSON object with Object.keys in order to render a toggle option for each mattress type in the object */}
         {
           Object.keys(mattresses).map((keyName, i) => (
             <div className="option" key={i}>

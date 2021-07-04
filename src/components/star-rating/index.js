@@ -1,5 +1,10 @@
 import './index.css';
 
+/**
+ * 
+ * @param rating - The current rating of the mattress
+ * @param outOf - The maximum score a mattress can have
+ */
 function StarRating({
   rating,
   outOf

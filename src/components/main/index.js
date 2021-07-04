@@ -3,7 +3,16 @@ import Toggle from '../toggle'
 import StarRating from '../star-rating';
 import AddButton from '../button'
 
+/**
+ * 
+ * @param props.mattresses - A JSON object which contains the data of the mattresses
+ * @param props.selectedMattress - The current selected mattress
+ * @param props.setSelectedMattress - This handler is used to update the current selected mattress
+ * @param props.setCartCount - This handler is used to update the current amount of items in the shopping cart
+ * @param props.cartCount - The current amount of items in the shopping cart
+ */
 function Main(props) {
+  // Get the selected mattress info from the JSON object
   const selectedMattressInfo = Object.values(props.mattresses)[props.selectedMattress]
   return (
     <main className="main">
