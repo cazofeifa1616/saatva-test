@@ -1,0 +1,29 @@
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.stars-outer::before {
+  content: "☆☆☆☆☆";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.stars-inner::before {
+  content: "★★★★★";
+  color: #f8ce0b;
+}
+
+.rating {
+  font-size: 12px;
+  margin-left: 5px;
+}

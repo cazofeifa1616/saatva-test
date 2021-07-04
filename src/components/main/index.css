@@ -1,0 +1,37 @@
+.main {
+  margin-top: 15px;
+}
+
+.main .main-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 15px;
+}
+
+.main .main-wrapper .title {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.main .main-wrapper .rating-container {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 968px) {
+  .main .main-wrapper {
+    flex-direction: row;
+  }
+
+  .main .main-wrapper .mattress-image {
+    margin-right: 30px;
+  }
+
+  .main .main-wrapper .title {
+    margin-top: 0;
+  }
+}

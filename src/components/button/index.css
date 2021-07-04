@@ -1,0 +1,22 @@
+.add-button {
+  padding: 10px 28px 10px 28px;
+  border: 1px solid #4d4d4d;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: .5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: #fff;
+  background-color: #d5aa63;
+  border-color: #d5aa63;
+  width: 100%;
+  margin-top: 40px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.add-button:hover {
+  color: #fff;
+  background-color: #e2c492;
+  border-color: #e2c492;
+}
